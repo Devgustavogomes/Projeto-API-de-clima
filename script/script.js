@@ -62,7 +62,7 @@ formCity.addEventListener('submit', async (event) => {
         return
     }
     // Aqui eu faço um Fetch pra Api Geocoding, preciso dela por conta que a outra API nao aceita nome de cidade.
-    const urlApi = `http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=${1}&appid=${apiKey}`
+    const urlApi = `https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=${1}&appid=${apiKey}`
     try {
         const response = await fetch(urlApi)
         const resolve = await response.json()
