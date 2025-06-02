@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Previsão do Clima</title>
+
+</head>
+
+<body class="">
+    <main class="block bg-slate-300  h-screen justify-items-center content-center">
+        <div class=" grid grid-rows-3  h-screen w-screen  sm:h-[90%]  sm:w-[90%] max-w-7xl"
+            style="grid-template-rows: 1fr 5fr 4fr;">
+            <!--Barra de pesquisa-->
+            <div id="navbar " class="flex justify-center items-center p-4 ">
+                <form id="formCity" class="relative p-5 w-full max-w-md">
+                    <input type="text"
+                        class="w-full  rounded-3xl bg-blue-400 text-white p-2 pl-4 pr-12 shadow-xl outline-none placeholder-white placeholder-opacity-75"
+                        placeholder="Buscar cidade..." id="inputCity">
+                    <button type="submit" id="buttonCity"
+                        class="absolute top-1/2 transform -translate-y-1/2 bg-white rounded-full p-2 right-6">
+                        <img src="style/images/pesquisar.png" alt="Buscar" class="w-[16px] h-[16px]">
+                    </button>
+                </form>
+            </div>
+            <!--Previsão atual-->
+            <div id="currentForecast" class=" justify-items-center ">
+                <div id="currentCard "
+                    class="h-[100%] w-[85%] sm:flex sm:h-[90%] sm:gap-10 sm:p-10 bg-white rounded-3xl justify-items-center shadow-xl">
+                    <div class="justify-items-center">
+                        <p class="p-4 font-bold text-3xl" id="showCityName">Cidade</p>
+                        <img src="" id="currentIcon" alt="" src="">
+                    </div>
+                    <div
+                        class=" bg-blue-400 h-[50%] w-[75%] sm:h-[100%]  rounded-3xl  shadow-2xl justify-items-center text-white">
+                        <p class="p-3 font-bold text-base sm:text-2xl " id="description">Descrição</p>
+                        <p class="  font-bold text-6xl p-4" id="currentTemp">Temp</p>
+                        <!--Card de informações (Azul)-->
+                        <div class="grid grid-cols-3 sm:pt-10 w-full  h-auto rounded-3xl justify-items-center">
+                            <div class="justify-items-center">
+                                <img src="style/images/temp.svg" alt="" class="sm:w-15">
+                                <p id="feelsLike">Sensação térmica</p>
+                            </div>
+                            <div class="justify-items-center">
+                                <img src="style/images/air.svg" alt="" class="sm:w-15">
+                                <p id="windSpeed">Velocidade do vento</p>
+                            </div>
+                            <div class="justify-items-center">
+                                <img src="style/images/humidity.svg" alt="" class="sm:w-15">
+                                <p id="humidity">humidade</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Previsões futuras-->
+            <div id="upcomingForecast" class="grid grid-rows-4 sm:flex sm:gap-10 justify-items-center p-5">
+
+            </div>
+        </div>
+        <!--Créditos-->
+        <footer class="h-[10%] w-full bg-slate-300 grid grid-cols-1 content-center justify-items-center  ">
+            <p class="font-semibold text-sm ">Desenvolvido por Gustavo Gomes.</p>
+            <p class="font-semibold text-xs">Dados por OpenWeatherMap.</p>
+        </footer>
+    </main>
+    <script src="script/script.js"></script>
+</body>
+
+</html>
