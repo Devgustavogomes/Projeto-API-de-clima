@@ -10,8 +10,8 @@
 </head>
 
 <body class="">
-    <main class="block bg-slate-300  h-screen justify-items-center content-center">
-        <div class=" grid grid-rows-3  h-screen w-screen  sm:h-[90%]  sm:w-[90%] max-w-7xl"
+    <main class="block bg-slate-300  h-[vhd] justify-items-center content-center">
+        <div class=" grid grid-rows-3  h-[vhd] w-screen  sm:h-auto  sm:w-[90%] max-w-7xl"
             style="grid-template-rows: 1fr 5fr 4fr;">
             <!--Barra de pesquisa-->
             <div id="navbar " class="flex justify-center items-center p-4 ">
@@ -33,23 +33,23 @@
                         <p class="p-4 font-bold text-3xl" id="showCityName">Cidade</p>
                         <img src="" id="currentIcon" alt="" src="">
                     </div>
+                    <!--Card de informações (Azul)-->
                     <div
-                        class=" bg-blue-400 h-[50%] w-[75%] sm:h-[100%]  rounded-3xl  shadow-2xl justify-items-center text-white">
+                        class=" bg-blue-400 h-auto w-[75%]   rounded-3xl  shadow-2xl justify-items-center text-white p-5">
                         <p class="p-3 font-bold text-base sm:text-2xl " id="description">Descrição</p>
-                        <p class="  font-bold text-6xl p-4" id="currentTemp">Temp</p>
-                        <!--Card de informações (Azul)-->
-                        <div class="grid grid-cols-3 sm:pt-10 w-full  h-auto rounded-3xl justify-items-center">
-                            <div class="justify-items-center">
-                                <img src="style/images/temp.svg" alt="" class="sm:w-15">
-                                <p id="feelsLike">Sensação térmica</p>
+                        <p class="  font-bold text-6xl p-4" id="currentTemp">Temp</p>  
+                        <div class="grid grid-cols-3  w-full  h-auto rounded-3xl justify-items-center p-5">
+                            <div class="justify-items-center p-5">
+                                <img src="style/images/temp.svg" alt="" class="w-[2.5rem]">
+                                <p id="feelsLike" class="text-[0.8rem]">Sensação térmica</p>
                             </div>
-                            <div class="justify-items-center">
-                                <img src="style/images/air.svg" alt="" class="sm:w-15">
-                                <p id="windSpeed">Velocidade do vento</p>
+                            <div class="justify-items-center p-5">
+                                <img src="style/images/air.svg" alt="" class="w-[2.5rem]">
+                                <p id="windSpeed" class="text-[0.8rem]" >Velocidade do vento</p>
                             </div>
-                            <div class="justify-items-center">
-                                <img src="style/images/humidity.svg" alt="" class="sm:w-15">
-                                <p id="humidity">humidade</p>
+                            <div class="justify-items-center p-5">
+                                <img src="style/images/humidity.svg" alt="" class="w-[2.5rem]">
+                                <p id="humidity" class="text-[0.8rem]">humidade</p>
                             </div>
                         </div>
                     </div>
@@ -61,11 +61,12 @@
             </div>
         </div>
         <!--Créditos-->
-        <footer class="h-[10%] w-full bg-slate-300 grid grid-cols-1 content-center justify-items-center  ">
-            <p class="font-semibold text-sm ">Desenvolvido por Gustavo Gomes.</p>
-            <p class="font-semibold text-xs">Dados por OpenWeatherMap.</p>
-        </footer>
+        
     </main>
+    <footer class="h-auto w-full bg-slate-300 grid grid-cols-1 content-center justify-items-center  ">
+        <p class="font-semibold text-sm ">Desenvolvido por Gustavo Gomes.</p>
+        <p class="font-semibold text-xs">Dados por OpenWeatherMap.</p>
+    </footer>
     <script src="script/script.js"></script>
 </body>
 

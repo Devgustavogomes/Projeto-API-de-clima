@@ -27,13 +27,13 @@ function loadingInformations(forecasts) {
             currentTemp.textContent = `${forecasts[0].temp}°`
             feelsLike.textContent = `${forecasts[0].feelsLike}°`
             windSpeed.textContent = `${forecasts[0].windSpeed} m/s`
-            humidity.textContent = forecasts[0].humidity
+            humidity.textContent = `${forecasts[0].humidity}%`
         } else {
             // Aqui gera dinamicamente a previsão de tempo
             const iconUrl = `http://openweathermap.org/img/wn/${forecasts[i].icon}@2x.png`
 
             forecastHTML += `<div
-                    class="grid grid-cols-3 p-2 sm:p-5 sm:flex sm:flex-col h-[70%] w-[85%] bg-white rounded-3xl shadow-xl items-center ">
+                    class="grid grid-cols-3 p-2 gap-5 sm:p-5 sm:flex sm:flex-col h-[55%] w-[85%] bg-white rounded-3xl shadow-xl items-center ">
                     <p class="pl-2 sm:pl-0 font-semibold">${forecasts[i].date}</p>
                     <img src="${iconUrl}" alt="" class="w-8 sm:w-25">
                     <p>${forecasts[i].temp}°</p>
