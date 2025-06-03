@@ -4,17 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Previsão do Clima</title>
 
 </head>
 
-<body class="">
-    <main class="flex flex-col items-center justify-center bg-slate-300 min-h-screen">
-        <div class="grid grid-rows-3 h-screen w-screen sm:h-auto sm:w-[90%] max-w-7xl mx-auto"
+<body class="overflow-x-hidden bg-slate-300">
+    <main class="flex flex-col items-center justify-center  min-h-screen">
+        <div class="grid grid-rows-3  w-screen sm:h-auto sm:w-[90%] max-w-7xl mx-auto"
             style="grid-template-rows: 1fr 5fr 4fr;">
             <!--Barra de pesquisa-->
-            <div id="navbar " class="flex justify-center items-center p-4 ">
+            <div id="navbar" class="flex justify-center items-center p-4 ">
                 <form id="formCity" class="relative p-5 w-full max-w-md">
                     <input type="text"
                         class="w-full  rounded-3xl bg-blue-400 text-white p-2 pl-4 pr-12 shadow-xl outline-none placeholder-white placeholder-opacity-75"
@@ -27,27 +27,27 @@
             </div>
             <!--Previsão atual-->
             <div id="currentForecast" class=" flex justify-center items-center ">
-                <div id="currentCard "
+                <div id="currentCard"
                     class="h-[100%] w-[85%] sm:flex sm:h-[90%] sm:gap-10 sm:p-10 bg-white rounded-3xl shadow-xl">
-                    <div class="justify-items-center">
+                    <div class="flex flex-col items-center w-full">
                         <p class="p-4 font-bold text-3xl" id="showCityName">Cidade</p>
                         <img src="" id="currentIcon" alt="" src="">
                     </div>
                     <!--Card de informações (Azul)-->
                     <div
-                        class=" bg-blue-400 h-auto w-[75%]   rounded-3xl  shadow-2xl justify-items-center text-white p-5">
+                        class=" bg-blue-400 h-auto w-full sm:w-[75%] rounded-3xl shadow-2xl text-white p-5 flex flex-col items-center text-center">
                         <p class="p-3 font-bold text-base sm:text-2xl " id="description">Descrição</p>
                         <p class="  font-bold text-6xl p-4" id="currentTemp">Temp</p>  
                         <div class="grid grid-cols-3  w-full  h-auto rounded-3xl justify-items-center p-5">
-                            <div class="justify-items-center p-5">
+                            <div class="flex flex-col items-center p-2">
                                 <img src="style/images/temp.svg" alt="" class="w-[2.5rem]">
                                 <p id="feelsLike" class="text-[0.8rem]">Sensação térmica</p>
                             </div>
-                            <div class="justify-items-center p-5">
+                            <div class="flex flex-col items-center p-2">
                                 <img src="style/images/air.svg" alt="" class="w-[2.5rem]">
                                 <p id="windSpeed" class="text-[0.8rem]" >Velocidade do vento</p>
                             </div>
-                            <div class="justify-items-center p-5">
+                            <div class="flex flex-col items-center p-2">
                                 <img src="style/images/humidity.svg" alt="" class="w-[2.5rem]">
                                 <p id="humidity" class="text-[0.8rem]">humidade</p>
                             </div>
@@ -56,17 +56,16 @@
                 </div>
             </div>
             <!--Previsões futuras-->
-            <div id="upcomingForecast" class="grid grid-rows-4 sm:flex sm:gap-10 justify-items-center p-5">
+            <div id="upcomingForecast" class="flex flex-col items-center gap-5 sm:flex-row sm:justify-center sm:gap-10 p-5">
 
             </div>
         </div>
         <!--Créditos-->
-        
-    </main>
-    <footer class="h-auto w-full bg-slate-300 grid grid-cols-1 content-center justify-items-center  ">
+        <footer class="h-auto w-full bg-slate-300 grid grid-cols-1 content-center justify-items-center  ">
         <p class="font-semibold text-sm ">Desenvolvido por Gustavo Gomes.</p>
         <p class="font-semibold text-xs">Dados por OpenWeatherMap.</p>
     </footer>
+    </main>
     <script src="script/script.js"></script>
 </body>
 
