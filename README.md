@@ -2,7 +2,7 @@
 
 Uma página web simples e interativa para consultar a previsão do tempo atual, detalhes do clima e a previsão dos próximos dias de qualquer cidade do mundo.
 
-![Demo do Site de CLima](./style/images/animação.gif)
+![Demo do Site de CLima](./style/images/Animação.gif)
 ---
 
 ## ✨ Funcionalidades
