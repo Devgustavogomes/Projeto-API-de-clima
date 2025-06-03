@@ -33,11 +33,10 @@ function loadingInformations(forecasts) {
             const iconUrl = `http://openweathermap.org/img/wn/${forecasts[i].icon}@2x.png`
 
             forecastHTML += `<div
-            class="flex flex-row sm:flex-col items-center justify-center  justify-evenly 
-                   sm:p-5 sm:gap-5 
-                   w-[85%] sm:w-[200px] bg-white rounded-3xl shadow-xl mx-auto">
-            <p class="font-semibold text-lg sm:text-xl">${forecasts[i].date}</p>
-            <img src="${iconUrl}" alt="Ícone do tempo" class="w-10 h-10 sm:w-16 sm:h-16">
+            class="flex flex-row sm:flex-col items-center justify-evenly w-[85%]  bg-white rounded-3xl shadow-xl mx-auto
+            sm:h-[70%] sm:w-[20%] sm:p-3">
+            <p class="font-semibold text-lg sm:text-3xl">${forecasts[i].date}</p>
+            <img src="${iconUrl}" alt="Ícone do tempo" class="w-[4rem] sm:w-[8rem]">
             <p class="text-2xl sm:text-3xl font-bold">${forecasts[i].temp}°</p>
         </div>`;
         }
