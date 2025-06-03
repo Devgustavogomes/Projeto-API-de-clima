@@ -10,8 +10,8 @@
 </head>
 
 <body class="">
-    <main class="block bg-slate-300  h-[vhd] justify-items-center content-center">
-        <div class=" grid grid-rows-3  h-[vhd] w-screen  sm:h-auto  sm:w-[90%] max-w-7xl"
+    <main class="flex flex-col items-center justify-center bg-slate-300 min-h-screen">
+        <div class="grid grid-rows-3 h-screen w-screen sm:h-auto sm:w-[90%] max-w-7xl mx-auto"
             style="grid-template-rows: 1fr 5fr 4fr;">
             <!--Barra de pesquisa-->
             <div id="navbar " class="flex justify-center items-center p-4 ">
@@ -26,9 +26,9 @@
                 </form>
             </div>
             <!--Previsão atual-->
-            <div id="currentForecast" class=" justify-items-center ">
+            <div id="currentForecast" class=" flex justify-center items-center ">
                 <div id="currentCard "
-                    class="h-[100%] w-[85%] sm:flex sm:h-[90%] sm:gap-10 sm:p-10 bg-white rounded-3xl justify-items-center shadow-xl">
+                    class="h-[100%] w-[85%] sm:flex sm:h-[90%] sm:gap-10 sm:p-10 bg-white rounded-3xl shadow-xl">
                     <div class="justify-items-center">
                         <p class="p-4 font-bold text-3xl" id="showCityName">Cidade</p>
                         <img src="" id="currentIcon" alt="" src="">
