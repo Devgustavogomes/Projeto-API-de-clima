@@ -44,6 +44,6 @@ Uma página web simples e interativa para consultar a previsão do tempo atual, 
 ## 👨‍💻 Autor
 
 * **[Gustavo Gomes]**
-* LinkedIn: [[Link para seu LinkedIn](https://www.linkedin.com/in/devgustavogomes/)]
-* GitHub: [Devgustavogomes](https://github.com/Devgustavogomes/)]
+* LinkedIn: [Gustavo Gomes](https://www.linkedin.com/in/devgustavogomes/)]
+* GitHub: [[Devgustavogomes](https://github.com/Devgustavogomes/)]
 * Email: [devgustavogomes31@gmail.com]
